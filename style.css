@@ -1,0 +1,78 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('images/logo\ 2.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+
+}
+header{
+    display: flex;
+    padding: 50px 15px 15px;
+}
+header input{
+    width: 100%;
+    max-width: 2800px;
+    padding: 1px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255 0.3);
+    border-bottom: 3px solid orange;
+    color: #313131;
+    border-radius: 14px 0px 14px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.header input:focus{
+    background-color: teal;
+}
+main{
+    flex: 1 1 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px 50px;
+}
+.location .city{
+    color: white;
+    font-size: 25px;
+}
+.current .temp{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 15px 0px;
+    text-shadow: 2px 2px tomato;
+}
+.current .temp span{
+    font-weight: 500;
+}
+.current .weather{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 1px 2px tomato;
+}
+.current .hi-low{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    text-shadow: 0px 1px tomato;
+}
+.date{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
